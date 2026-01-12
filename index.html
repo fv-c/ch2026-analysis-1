@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+	<link rel="stylesheet" href="css/personal.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- ========================= -->
+			<!-- TITLE -->
+			<!-- ========================= -->
+
+			<section>
+				<h2>Introduction to Post-Tonal Theory</h2>
+				<h3>Chapters 1–2</h3>
+				<p class="small">Joseph N. Straus – 4th Edition</p>
+			</section>
+
+			<!-- ========================= -->
+			<!-- CHAPTER 1 -->
+			<!-- ========================= -->
+
+			<section>
+				<h2>Part 1</h2>
+				<h3>Basic Concepts of Pitch and Interval</h3>
+			</section>
+
+			<section>
+				<section>
+					<h3>Octave Equivalence</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li>Pitches separated by one or more octaves are considered equivalent</li>
+						<li>They share the same pitch name</li>
+						<li>Foundation of the concept of <em>pitch class</em></li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/octave-eq.png" data-preview-image>
+					<p>Schoenberg, String quartet no. 4, first movement</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Enharmonic Equivalence</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li>In post-tonal music: B♭ ≡ A♯</li>
+						<li>Tonal function is no longer decisive</li>
+						<li>Notation is often conventional or graphic</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/enharmonic-eq-1.png" data-preview-image>
+				</section>
+			</section>
+
+
+			<section>
+				<section>
+					<h3>Pitch vs. Pitch Class</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li><strong>Pitch</strong>: specific frequency and register</li>
+						<li><strong>Pitch class</strong>: abstract collection of equivalent pitches</li>
+						<li>Pitch class is register-independent</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/p-vs-pc-1.png" data-preview-image>
+					<p>Six pitches, just one pitch class</p>
+				</section>
+			</section>
+
+			<section>
+				<h3>Integer Notation</h3>
+				<ul>
+					<li>The 12 pitch classes are represented by integers 0–11</li>
+					<li>C = 0, C♯/D♭ = 1, …, B = 11</li>
+					<li>“Fixed-do” convention</li>
+				</ul>
+			</section>
+
+			<section>
+				<section>
+					<h3>Modulo 12 Arithmetic</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li>All operations take place <strong>mod 12</strong></li>
+						<li class="formula">\[x ≡ x ± 12 (mod 12)\]</li>
+						<li>Circular pitch-class space (clockface)</li>
+					</ul>
+				</section>
+				<section>
+					<img src="img/dodec.png" width="50%" data-preview-image>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Intervals Measured in Semitones</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li>Intervals are measured in semitones</li>
+						<li>Traditional interval names are secondary</li>
+						<li>Enharmonically equivalent intervals are identical</li>
+					</ul>
+				</section>
+				<section>
+					<table style="font-size: 0.75em;">
+						<thead>
+							<tr>
+								<th>Interval name</th>
+								<th>Semitones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>unison</td>
+								<td>0</td>
+							</tr>
+							<tr>
+								<td>minor 2nd</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>major 2nd, diminished 3rd</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>minor 3rd, augmented 2nd</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>major 3rd, diminished 4th</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>augmented 3rd, perfect 4th</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>augmented 4th, diminished 5th</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>perfect 5th, diminished 6th</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>augmented 5th, minor 6th</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>major 6th, diminished 7th</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>...</td>
+								<td>..</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+			</section>
+
+			<section>
+				<h3>Pitch Intervals</h3>
+				<ul>
+					<li><strong>Ordered</strong>: direction matters (+ / −)</li>
+					<li><strong>Unordered</strong>: distance only</li>
+					<li>Defined in pitch space</li>
+				</ul>
+				<img src="img/ordunord.png" width="90%" data-preview-image>
+			</section>
+
+			<section>
+				<section>
+					<h3>Interval Class (ic)</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li>An unordered pitch-class interval</li>
+						<li>Only 7 interval classes: ic0-ic6</li>
+						<li>\[interval &gt; 6 → interval(mod(-12))\] complements</li>
+					</ul>
+				</section>
+
+				<section>
+					<table>
+						<thead>
+							<tr>
+								<th>Interval class</th>
+								<th>Pitch intervals (semitones)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0</td>
+								<td>0, 12, 24</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>1, 11, 13</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>2, 10, 14</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>3, 9, 15</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>4, 8, 16</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>5, 7, 17</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>6, 18</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h3>Interval-Class Vector</h3>
+					<img width="40" height="40" alt="" class="downArrow"
+						src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+				</section>
+				<section>
+					<ul>
+						<li>Compact representation of intervallic content</li>
+						<li>Format: <span class="formula">[ic1 ic2 ic3 ic4 ic5 ic6]</span></li>
+						<li>Describes the “color” of a collection</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Case study</h4>
+					<img src="img/esaustivo-1.png" width="50%" data-preview-image>
+					<p>Interval vector?</p>
+				</section>
+			</section>
+
+			<section>
+				<h3>Spacing and Register</h3>
+				<ul>
+					<li>Same pitch-class set → different sound</li>
+					<li>Register affects perception</li>
+					<li>Spacing is a compositional parameter</li>
+				</ul>
+				<img src="img/spacing-1.png" width="50%" data-preview-image>
+			</section>
+
+			<!-- ========================= -->
+			<!-- CHAPTER 2 -->
+			<!-- ========================= -->
+
+			<section>
+				<h2>Part 2</h2>
+				<h3>Pitch-Class Sets</h3>
+			</section>
+
+			<section>
+				<h3>Pitch-Class Sets</h3>
+				<ul>
+					<li>Unordered collections of pitch classes</li>
+					<li>Register, doublings, and order are irrelevant</li>
+					<li>Core analytical object in post-tonal theory</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Normal Form</h3>
+				<ul>
+					<li>Most compact ordering of a set</li>
+					<li>Minimizes total intervallic span</li>
+					<li>Standard reference for comparison</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Transposition (Tn)</h3>
+				<ul>
+					<li>Uniform shift of all pitch classes</li>
+					<li class="formula">Tn(x) = x + n (mod 12)</li>
+					<li>Preserves intervallic structure</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Inversion (In)</h3>
+				<ul>
+					<li>Reflection in pitch-class space</li>
+					<li class="formula">In(x) = n − x (mod 12)</li>
+					<li>Intervals become complements</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Set Class</h3>
+				<ul>
+					<li>Collection of sets related by T and I</li>
+					<li>Abstract equivalence category</li>
+					<li>Independent of transposition and inversion</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Prime Form</h3>
+				<ul>
+					<li>Canonical representative of a set class</li>
+					<li>Normal form transposed to 0</li>
+					<li>Central analytical tool</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Segmentation</h3>
+				<ul>
+					<li>Analytical choice of musical units</li>
+					<li>Depends on context, gesture, perception</li>
+					<li>Never entirely objective</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			touch: true,
+			slideNumber: "h.v",
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+		});
+	</script>
+</body>
+
+</html>
